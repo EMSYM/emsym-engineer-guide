@@ -6,7 +6,8 @@
 
 .. toctree::
    :maxdepth: 2
-  
+ 
+   phabricator 
    QA
    email
    git

@@ -10,5 +10,6 @@ wiki
 git
 ========
 
+.. graphviz:: graph/codereview.dot
 
 

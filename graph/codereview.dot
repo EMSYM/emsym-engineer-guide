@@ -1,0 +1,25 @@
+digraph codereview {
+    clone -> r1;
+    r1 -> Diff1;
+    subgraph cluster_task {
+        label="branch\n T123";
+        Diff1 -> Diff2 [label="reject"];
+    }
+    Diff2 -> r2 [label=accept];
+    subgraph cluster_master {
+    	node[shape=box,style=rounded]; r1;r2;r3;
+        label = "branch\n master";
+        r1 -> r2 [minlen = 3];
+        r2 -> r3 ;
+    }
+
+    subgraph cluster_task2 {
+        label="branch\n T77";
+        D1;
+    }
+    r1 -> D1;
+    D1 -> r3[label=accept,minlen=3];
+    
+}
+
+

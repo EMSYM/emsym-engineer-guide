@@ -1,0 +1,34 @@
+digraph git {
+	node [shape=box,style=rounded];
+    subgraph cluster_master {
+        label = "master";
+        r1 -> r2 -> r3 -> r4 -> r5 -> r6;
+    }
+
+    subgraph cluster_release {
+        label = "release";
+		r1 -> r1_1;
+		r1_1[label="r1"]; 
+        bugfix -> bugfix2 -> hotfix;
+		r1_1 -> bugfix;
+    }
+
+	subgraph cluster_tag {
+		node [shape=note];
+		edge [dir=none,style=dotted];
+		label="tag";
+	    r1_1 -> V1rc;
+		bugfix2 -> V1;
+		hotfix -> V11;
+		V1rc[label="release candidate\n v1.0RC"];
+		V1[label="release\n v1.0"];
+		V11[label="update\n v1.1"];
+		V1rc -> V1 -> V11[style=invis];
+	}
+    bugfix -> r3 [label="merge"];
+	bugfix2 -> r4 [label="merge"];
+    hotfix -> r6 [label="merge"];
+}
+
+
+

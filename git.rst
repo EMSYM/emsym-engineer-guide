@@ -14,5 +14,6 @@ Git是提交代码的工具，使用中应当与我们在QA系统中提交的工
  
 
 
-
-
+Release workflow
+=====================
+.. graphviz:: graph/release.dot

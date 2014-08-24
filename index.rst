@@ -9,7 +9,7 @@
  
    phabricator 
    QA
-   email
+.. email
    git
    git workflow
    github

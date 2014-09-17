@@ -9,8 +9,8 @@
  
    phabricator 
    QA
-.. email
    git
+.. email
    git workflow
    github
    readthedocs

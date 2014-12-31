@@ -51,5 +51,9 @@ wiki
 
 然后类似的：建立分支名 `T77` ，:command:`arc diff` 提交更改，
 指定审核人。通过审核之后，:command:`arc land` 命令
-提交代码到git，生成新版本r3.
+提交代码到git，生成新版本r3. 
+这个命令是phabricator文档推荐的方法，批处理封装了git命令，
+但是实际上傻瓜化的方法会丧失灵活性。
+所以我们还是建议直接用 :command:`git push`
+
 

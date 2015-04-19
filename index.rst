@@ -1,5 +1,5 @@
 
-昂信嵌入式 git 使用文档
+昂信嵌入式 工程师指南 
 =================================  
 
 目录
@@ -10,10 +10,11 @@
    phabricator 
    QA
    git
-.. email
-   git workflow
    github
    readthedocs
+   blog
+.. email
+   git workflow
    
   
 

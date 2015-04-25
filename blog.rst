@@ -16,11 +16,25 @@ Jekyll没有很好的图形界面，但是完全可以用git管理，
 ==========
 Blog的内容托管在github.com。
 简单的 ``git clone https://github.com/EMSYM/octopress.git`` 即可实现
+如果增加笔记、修改内容，请先在github fork https://github.com/EMSYM/octopress/fork ，
+再按照 :ref:`github的提交流程 <github-patch>` 发起pull request。
 
 编译
 =====
 生成网站需要安装octopress，具体参考 `octopress 的文档 <http://octopress.org/docs>`_ 
-因为 Jekyll 基于 ruby 开发，所以需要先安装 ruby
+
+因为 Jekyll 基于 ruby 开发，所以需要先安装 ruby，要求版本≥1.9.3
+
+.. code-block:: console
+
+   git clone https://github.com/EMSYM/octopress.git emsym
+   cd emsym
+   gem install bundler
+   bundle install
+   rake install
+   rake preview
+
+打开 http://localhost:4000 即可
 
 新建页面
 =====================

@@ -20,7 +20,7 @@ readthedocs.org是一个网站，可以导入Sphinx文档，并且可以与git�
 
 * 登陆github的EMSYM页面，网址：https://github.com/emsym
 
-.. image:: ./image/sphinx1.png
+.. image:: ./image/sphinx2.png
         :height: 244 px
    	:width: 749 px
   	:scale: 100 %

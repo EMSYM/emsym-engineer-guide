@@ -19,11 +19,11 @@
    :maxdepth: 2
  
    blog
+   write-doc-in-github
    readthedocs
    git
    github
    phabricator
-   write-doc-in-github
 
 .. email
    git workflow
